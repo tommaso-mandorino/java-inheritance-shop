@@ -25,5 +25,13 @@ public class Main {
         System.out.println(product1.getBrand());
         System.out.println(product1.getPrice());
         System.out.println(product1.getVat());
+
+        System.out.println();
+
+        Smartphone smartphone1 = new Smartphone(12345, "Smartphone name", "Smartphone brand", new BigDecimal("500"), new BigDecimal("22"), "000000000000000", 512);
+        
+        System.out.println(smartphone1.getImeiCode());
+        System.out.println(smartphone1.getMemoryAmount());
+        System.out.println(smartphone1.getBrand());
     }
 }
