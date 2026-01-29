@@ -33,5 +33,16 @@ public class Main {
         System.out.println(smartphone1.getImeiCode());
         System.out.println(smartphone1.getMemoryAmount());
         System.out.println(smartphone1.getBrand());
+
+        System.out.println();
+        
+        Television television1 = new Television(11111, "Television 1 name", "Television 1 brand", new BigDecimal("1000"), new BigDecimal("22"), 72.5f, 43.3f, 7.6f, 32, true);
+        
+        System.out.println(television1.getWidth());
+        System.out.println(television1.getHeight());
+        System.out.println(television1.getDepth());
+        System.out.println(television1.getInches());
+        System.out.println(television1.getIsSmart());
+        System.out.println(television1.getName());
     }
 }

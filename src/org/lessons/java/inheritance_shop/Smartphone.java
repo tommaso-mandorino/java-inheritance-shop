@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 public class Smartphone extends Product {
 
-    public String imeiCode;
-    public int memoryAmount;
+    private String imeiCode;
+    private int memoryAmount;
 
     public Smartphone(int code, String name, String brand, BigDecimal price, BigDecimal vat, String imeiCode, int memoryAmount) {
         super(code, name, brand, price, vat);
