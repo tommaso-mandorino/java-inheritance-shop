@@ -44,5 +44,14 @@ public class Main {
         System.out.println(television1.getInches());
         System.out.println(television1.getIsSmart());
         System.out.println(television1.getName());
+
+        System.out.println();
+
+        Headphones headphones1 = new Headphones(33333, "Headphones 1 name", "Headphones 1 brand", new BigDecimal("50"), new BigDecimal("22"), "white", true, false);
+
+        System.out.println(headphones1.getColor());
+        System.out.println(headphones1.getIsWireless());
+        System.out.println(headphones1.getIsWired());
+        System.out.println(headphones1.getPrice());
     }
 }
