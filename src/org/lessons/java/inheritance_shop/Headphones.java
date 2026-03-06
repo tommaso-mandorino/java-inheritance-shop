@@ -35,4 +35,15 @@ public class Headphones extends Product {
     public void setIsWired(boolean isWired) {
         this.isWired = isWired;
     }
+
+    @Override
+    public String toString() {
+
+        return
+            "Tipologia: cuffie\n" +
+            super.toString() +
+            "Colore: " + this.color + "\n" +
+            "Wireless: " + (this.isWireless ? "sì" : "no") + "\n" +
+            "Cablate: " +  (this.isWired ? "sì" : "no") + "\n\n";
+    }
 }

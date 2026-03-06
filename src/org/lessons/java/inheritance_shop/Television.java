@@ -10,11 +10,11 @@ public class Television extends Product {
     private int inches;
     private boolean isSmart;
 
-    public Television(int code, String name, String brand, BigDecimal price, BigDecimal vat, float width, float heigth, float dept, int inches, boolean isSmart) {
+    public Television(int code, String name, String brand, BigDecimal price, BigDecimal vat, float width, float heigth, float depth, int inches, boolean isSmart) {
         super(code, name, brand, price, vat);
         this.width = width;
         this.height = heigth;
-        this.depth = dept;
+        this.depth = depth;
         this.inches = inches;
         this.isSmart = isSmart;
     }
@@ -52,5 +52,15 @@ public class Television extends Product {
     }
     public void setIsSmart(boolean isSmart) {
         this.isSmart = isSmart;
+    }
+
+    @Override
+    public String toString() {
+        return
+            "Tipologia: televisore\n" +
+            super.toString() +
+            "Dimensioni (larghezza x altezza x profondità): " + this.width + " cm x " + this.height + " cm x " + this.depth + " cm\n" +
+            "Pollici: " + this.inches + "\n" +
+            "Smart: " + (this.isSmart ? "sì" : "no") + "\n\n";
     }
 }

@@ -1,19 +1,29 @@
 # Esercizio `Java Inheritance Shop`
 
 1) Creare la **classe** `Prodotto` che gestisce i prodotti di uno shop, caratterizzati da:
+
     - `codice` (numero intero);
+
     - `nome`;
+
     - `marca`;
+
     - `prezzo`;
+
     - `iva`.
 
 2) Usare opportunamente i **livelli di accesso** (public, private), i **costruttori**, i **metodi getter e setter** ed **eventuali altri metodi di “utilità”** per fare in modo che:
+
     - il `codice prodotto` sia accessibile **solo in lettura**;
+
     - gli `altri attributi` siano accessibili sia in **lettura** che in **scrittura**.
 
 3) Avvalendosi dell’**ereditarietà**, **riutilizzare il codice** di `Prodotto` nella stesura delle **classi** che gestiscono i vari **sottotipi** di prodotto, ovvero:
+
     - `Smarphone`, caratterizzati anche dal `codice IMEI` e dalla `quantità di memoria`;
+
     - `Televisori`, caratterizzati dalle `dimensioni` e dalla proprietà di essere `smart` oppure no;
+    
     - `Cuffie`, caratterizzate dal `colore` e se sono `wireless` o `cablate`.
 
 ## Parte 2
@@ -28,7 +38,7 @@ Al termine dell’inserimento **stampare il carrello**, applicando per ogni clas
 
 Aggiungere alla **classe** `Prodotto` un **metodo** per il **calcolo del prezzo scontato per clienti con tessera fedeltà**, che applica al prezzo uno **sconto del 2%**, tenendo conto delle seguenti **eccezioni**:
 
-- per gli `Smartphone`, lo sconto è del **5%** se la quantità di **memoria è inferiore a 32GB**;
+- per gli `Smartphone`, lo sconto è del **5%** se la quantità di **memoria è inferiore a 32 GB**;
 
 - per i `Televisori` lo sconto è del **10% se la televisione non è smart**;
 

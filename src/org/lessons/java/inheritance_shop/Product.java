@@ -50,4 +50,15 @@ public class Product {
     public void setVat(BigDecimal vat) {
         this.vat = vat;
     }
+
+    @Override
+    public String toString() {
+
+        return
+            "Codice: " + this.code + "\n" +
+            "Nome: " + this.name + "\n" +
+            "Marca: " + this.brand + "\n" +
+            "Prezzo: " + this.price + "\n" +
+            "IVA: " + this.vat + "\n";
+    }
 }
